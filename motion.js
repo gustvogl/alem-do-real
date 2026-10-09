@@ -8,7 +8,7 @@
   let media = null;
 
   function mount() {
-    if (media) return;
+    if (media || document.body.classList.contains('motion-paused')) return;
     media = gsap.matchMedia();
     media.add({
       motion: '(prefers-reduced-motion: no-preference)',
@@ -47,6 +47,18 @@
       gsap.to('.headline', {
         y: -22, opacity: 0.8, ease: 'none',
         scrollTrigger: { trigger: '.monax-hero', start: 'top top', end: 'bottom top', scrub: 0.8 }
+      });
+
+      gsap.from('.collage-item', {
+        opacity: 0, y: 45, duration: 0.8, stagger: 0.1, ease: 'power3.out',
+        scrollTrigger: { trigger: '.collage-section', start: 'top 80%', once: true }
+      });
+      gsap.from('.preview-panel', {
+        opacity: 0, y: 36, scale: 0.9, duration: 0.9, stagger: 0.12, ease: 'power3.out',
+        scrollTrigger: { trigger: '.duel-section', start: 'top 75%', once: true }
+      });
+      gsap.to('.preview-seal', {
+        y: 6, duration: 3.4, ease: 'sine.inOut', yoyo: true, repeat: -1
       });
 
       const number = document.querySelector('.stat-block .num');
@@ -100,7 +112,12 @@
     });
   }
 
-  mount();
+  if (window.WORKSHOP_BOOT_COMPLETE) mount();
+  window.addEventListener('workshopbootready', mount, { once: true });
+  window.addEventListener('workshopmotionchange', () => {
+    media?.revert(); media = null;
+    if (window.WORKSHOP_BOOT_COMPLETE) mount();
+  });
   window.addEventListener('pagehide', () => { media?.revert(); media = null; });
   window.addEventListener('pageshow', (event) => { if (event.persisted) mount(); });
   window.addEventListener('load', () => ScrollTrigger.refresh(), { once: true });

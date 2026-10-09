@@ -2,55 +2,65 @@ ALÉM DO REAL — GRUPO 3
 Inteligência com Consciência: o humano no centro da era digital
 
 COMO ABRIR
-Abra index.html no navegador ou publique todos os arquivos em um serviço de sites estáticos. Mantenha todos os arquivos e a pasta assets na mesma estrutura do ZIP.
-O site não depende de fontes externas, serviços pagos, instalação de pacotes ou conexão para suas principais funções. O vídeo e as orientações estão incluídos.
+Extraia todos os arquivos do ZIP e abra index.html no navegador.
+Também é possível publicar seu conteúdo na raiz de um serviço de sites estáticos.
+Mantenha as pastas assets e videos na mesma estrutura. Fontes, animações, vídeos e PDF estão incluídos; as funções principais funcionam sem conexão. Os links das fontes exigem internet.
 
-O QUE ESTÁ INCLUÍDO
-- Vídeo fornecido pelo usuário, preservado com imagem e áudio, em um player simples.
-- Checklist de seis etapas de verificação.
-- Ficha de integrantes, responsabilidades, processo de geração e revisão humana.
-- PDF original das orientações da atividade.
-- Navegação por teclado, adaptação a celulares e redução de movimentos.
-- Novo visual baseado na referência enviada, inspirado na composição Monax, com títulos grandes em Inter, cartões arredondados e textura.
-- Tema claro/escuro, menu de tela inteira, superfícies com textura ou lisas e tamanho de leitura regulável.
-- Preferências salvas localmente e autoajuste do título, sem depender de jQuery, Fitty ou CDNs.
-- Animações de entrada, movimento suave dos marcadores, parallax com mouse e contador de etapas. A preferência de redução de movimento do sistema é respeitada.
-- Botão central leva ao player e inicia o vídeo; os atalhos levam às seções do projeto.
+VISUAL E INTERAÇÕES
+O visual Monax anterior ao Pinterest foi recuperado: fundo claro com textura, tipografia Inter grande, detalhes verdes, cartões arredondados e composição em colunas.
+Inclui tema claro/escuro, menu, regulagem do texto, superfícies lisas ou com textura, pausa de animações e respeito à redução de movimento do sistema.
+Há carregamento com progresso das imagens e opção de pular, entradas animadas, colagem horizontal com imagens em formatos verticais e horizontais, marcadores flutuantes e transições nas rodadas.
 
-PARA USAR O SITE
-1. Clique em “Preencher ficha do grupo” na seção do projeto.
-2. Preencha integrantes, responsabilidades, ferramenta/processo confirmado e revisão humana efetivamente realizada.
-3. Baixe a ficha para levar uma cópia. Dados do navegador podem ser apagados; os downloads não fazem backup automático.
-4. Use “Assistir ao vídeo” para abrir o player. A reprodução também pode ser controlada pelos botões nativos do navegador.
-5. O checklist de seis perguntas ajuda a organizar a verificação de origem, contexto e fontes.
+DINÂMICA — IA OU REAL?
+- Seis rodadas, com doze vídeos diferentes: seis de IA e seis filmagens reais.
+- Um vídeo real e um vídeo gerado por IA em cada dupla.
+- As posições A/B são embaralhadas a cada participação.
+- Cada amostra tem cinco segundos. É preciso assistir a 3,5 segundos de cada vídeo para votar; avançar pelo controle de tempo não substitui a reprodução.
+- A confiança é opcional. A origem, os créditos e as licenças aparecem após a escolha.
+- O resultado pode ser baixado; a última pontuação fica apenas neste navegador.
+- Fechar a dinâmica ou sair da página pausa os vídeos.
+- Os clipes de IA são demonstrações públicas já existentes de Sora / OpenAI, de 2024. Não foram gerados pelo grupo.
+- O vídeo original do Grupo 3 aparece somente no exemplo, fora dos desafios, preservado com áudio.
+
+PARA A ATIVIDADE
+1. Mostre o exemplo do grupo para abrir a conversa.
+2. Clique em “Começar o desafio” e conduza as seis comparações.
+3. Após cada escolha, discuta o palpite e confira as fontes.
+4. Use o checklist das seis etapas para organizar a investigação.
+5. Na seção do projeto, preencha integrantes, responsabilidades, processo do original e revisão humana efetivamente realizada. Baixe a ficha para guardar.
 
 TRANSPARÊNCIA
-O vídeo foi fornecido como exemplo de IA generativa. O nome do arquivo não confirma, por si só, qual ferramenta, versão ou processo foi usado.
-O site foi desenvolvido com auxílio de IA. Integrantes e etapas de revisão precisam ser preenchidos pelo grupo; nenhuma aprovação humana foi presumida.
-Aparência e falhas visuais são pistas, não prova isolada. O site não oferece detecção automática de IA.
+As respostas seguem a origem publicada; o site não é um detector automático de IA.
+Uma aparência convincente ou uma falha visual não comprova, sozinha, a origem.
+Os detalhes de adaptação e todos os créditos estão em CREDITOS-VIDEOS.md e na seção Fontes.
+O site foi desenvolvido com auxílio de IA. A aprovação e a revisão dos integrantes não foram presumidas.
+As informações registradas e as preferências ficam neste navegador.
 
-ORIENTAÇÃO AUTORITATIVA
-O PDF fornecido nesta versão associa o Squad 03 à Atividade 03, “Vídeo gerado por IA”, no Workshop prático 01.
+ORIENTAÇÕES DA ATIVIDADE
+O PDF fornecido associa o Squad 03 à Atividade 03, “Vídeo gerado por IA”, no Workshop prático 01.
 Professor: Leandro Gaudio Rosa. SENAI-SP, 2026, p. 3 e 6–7.
 
 ARQUIVOS
 index.html — estrutura e conteúdo
-styles.css — estrutura, controles e responsividade
-app.js — interações
-monax.css — visual baseado na nova referência, temas e adaptação a celulares
-motion.js — animações GSAP e ScrollTrigger
-preferences.js — tema, menu, textura, tamanho do texto e autoajuste do título
-assets/video-ia.mp4 — vídeo original
-assets/apresentador.jpg, cidade.jpg, detalhe.jpg — frames extraídos do vídeo
+styles.css e monax.css — visual recuperado e responsividade
+preferences.js — tema, menu, textura e conforto de leitura
+app.js — checklist e ficha do grupo
+motion.js — animações de entrada e de rolagem
+assets/challenge.css e challenge.js — apresentação e dinâmica
+assets/rounds.js — amostras, origens, créditos e licenças
+assets/amostra-01.jpg a amostra-12.jpg — pôsteres
+videos/amostra-01.mp4 a amostra-12.mp4 — doze recortes do desafio
+assets/video-ia.mp4 — único vídeo original do grupo
 assets/orientacoes.pdf — documento original da atividade
-assets/vendor — GSAP 3.12.5, ScrollTrigger e fonte Inter, incluídos localmente
+FICHA-GRUPO.md — ficha editável para preparação
+CREDITOS-VIDEOS.md — referências e adaptações dos vídeos
+assets/vendor — GSAP, ScrollTrigger e fonte Inter, incluídos localmente
 
-CRÉDITOS DE DEPENDÊNCIAS
-GSAP e ScrollTrigger: GreenSock, https://gsap.com/ (avisos de licença preservados nos arquivos).
-Fonte Inter: Rasmus Andersson, via Google Fonts; licença SIL Open Font License 1.1 incluída em assets/vendor/Inter-OFL.txt.
-As dependências foram incluídas para que o visual e as animações também funcionem sem CDN.
+CRÉDITOS DAS DEPENDÊNCIAS
+GSAP e ScrollTrigger 3.12.5: GreenSock, https://gsap.com/; avisos preservados nos arquivos.
+Inter: Rasmus Andersson; licença SIL Open Font License 1.1 em assets/vendor/Inter-OFL.txt.
 
 PUBLICAR NO GITHUB PAGES
-Envie o conteúdo deste ZIP para a raiz do repositório (index.html diretamente na raiz).
-Em Settings > Pages, escolha a publicação da branch utilizada, na pasta / (root).
-O ZIP não inclui uma pasta principal extra. A pasta assets é necessária para o site.
+Envie o conteúdo do ZIP para a raiz do repositório, com index.html diretamente na raiz.
+Em Settings > Pages, escolha a branch utilizada e a pasta / (root).
+O ZIP não inclui uma pasta principal extra.

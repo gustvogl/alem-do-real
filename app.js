@@ -41,10 +41,7 @@
   const video = $('video');
   video.addEventListener('error', () => { $('video-error').hidden = false; });
   video.addEventListener('canplay', () => { $('video-error').hidden = true; });
-  $('preview-play').addEventListener('click', () => {
-    $('laboratorio').scrollIntoView({ behavior: reducedMotion ? 'auto' : 'smooth' });
-    video.play().catch(() => toast('Toque em reproduzir no player para assistir.'));
-  });
+
 
   function updateChecks() {
     const count = state.checks.filter(Boolean).length;
@@ -133,7 +130,7 @@
       if (!entry.isIntersecting) return;
       $('main-nav').querySelectorAll('a').forEach((link) => link.classList.toggle('current', link.hash === `#${entry.target.id}`));
     }), { rootMargin: '-20% 0px -60% 0px' });
-    ['laboratorio', 'evidencias', 'metodo', 'projeto'].forEach((id) => sectionObserver.observe($(id)));
+    ['dinamica', 'laboratorio', 'evidencias', 'metodo', 'fontes', 'projeto'].forEach((id) => sectionObserver.observe($(id)));
   }
 
   // Expose only the verification steps still present on the page.
