@@ -1,0 +1,56 @@
+ALÉM DO REAL — GRUPO 3
+Inteligência com Consciência: o humano no centro da era digital
+
+COMO ABRIR
+Abra index.html no navegador ou publique todos os arquivos em um serviço de sites estáticos. Mantenha todos os arquivos e a pasta assets na mesma estrutura do ZIP.
+O site não depende de fontes externas, serviços pagos, instalação de pacotes ou conexão para suas principais funções. O vídeo e as orientações estão incluídos.
+
+O QUE ESTÁ INCLUÍDO
+- Vídeo fornecido pelo usuário, preservado com imagem e áudio, em um player simples.
+- Checklist de seis etapas de verificação.
+- Ficha de integrantes, responsabilidades, processo de geração e revisão humana.
+- PDF original das orientações da atividade.
+- Navegação por teclado, adaptação a celulares e redução de movimentos.
+- Novo visual baseado na referência enviada, inspirado na composição Monax, com títulos grandes em Inter, cartões arredondados e textura.
+- Tema claro/escuro, menu de tela inteira, superfícies com textura ou lisas e tamanho de leitura regulável.
+- Preferências salvas localmente e autoajuste do título, sem depender de jQuery, Fitty ou CDNs.
+- Animações de entrada, movimento suave dos marcadores, parallax com mouse e contador de etapas. A preferência de redução de movimento do sistema é respeitada.
+- Botão central leva ao player e inicia o vídeo; os atalhos levam às seções do projeto.
+
+PARA USAR O SITE
+1. Clique em “Preencher ficha do grupo” na seção do projeto.
+2. Preencha integrantes, responsabilidades, ferramenta/processo confirmado e revisão humana efetivamente realizada.
+3. Baixe a ficha para levar uma cópia. Dados do navegador podem ser apagados; os downloads não fazem backup automático.
+4. Use “Assistir ao vídeo” para abrir o player. A reprodução também pode ser controlada pelos botões nativos do navegador.
+5. O checklist de seis perguntas ajuda a organizar a verificação de origem, contexto e fontes.
+
+TRANSPARÊNCIA
+O vídeo foi fornecido como exemplo de IA generativa. O nome do arquivo não confirma, por si só, qual ferramenta, versão ou processo foi usado.
+O site foi desenvolvido com auxílio de IA. Integrantes e etapas de revisão precisam ser preenchidos pelo grupo; nenhuma aprovação humana foi presumida.
+Aparência e falhas visuais são pistas, não prova isolada. O site não oferece detecção automática de IA.
+
+ORIENTAÇÃO AUTORITATIVA
+O PDF fornecido nesta versão associa o Squad 03 à Atividade 03, “Vídeo gerado por IA”, no Workshop prático 01.
+Professor: Leandro Gaudio Rosa. SENAI-SP, 2026, p. 3 e 6–7.
+
+ARQUIVOS
+index.html — estrutura e conteúdo
+styles.css — estrutura, controles e responsividade
+app.js — interações
+monax.css — visual baseado na nova referência, temas e adaptação a celulares
+motion.js — animações GSAP e ScrollTrigger
+preferences.js — tema, menu, textura, tamanho do texto e autoajuste do título
+assets/video-ia.mp4 — vídeo original
+assets/apresentador.jpg, cidade.jpg, detalhe.jpg — frames extraídos do vídeo
+assets/orientacoes.pdf — documento original da atividade
+assets/vendor — GSAP 3.12.5, ScrollTrigger e fonte Inter, incluídos localmente
+
+CRÉDITOS DE DEPENDÊNCIAS
+GSAP e ScrollTrigger: GreenSock, https://gsap.com/ (avisos de licença preservados nos arquivos).
+Fonte Inter: Rasmus Andersson, via Google Fonts; licença SIL Open Font License 1.1 incluída em assets/vendor/Inter-OFL.txt.
+As dependências foram incluídas para que o visual e as animações também funcionem sem CDN.
+
+PUBLICAR NO GITHUB PAGES
+Envie o conteúdo deste ZIP para a raiz do repositório (index.html diretamente na raiz).
+Em Settings > Pages, escolha a publicação da branch utilizada, na pasta / (root).
+O ZIP não inclui uma pasta principal extra. A pasta assets é necessária para o site.
